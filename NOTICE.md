@@ -22,3 +22,5 @@ The documentation openly discusses earlier methodological flaws (such as look-ah
 ### 4. No License Granted
 
 The publication of this architectural overview does not grant any express or implied license to recreate, commercialize, or reverse-engineer the proprietary quantitative strategies or live execution engines described herein. All underlying intellectual property remains strictly private.
+
+_Academic reviewers and researchers interested in learning more about the project may contact me for a more detailed walkthrough._
