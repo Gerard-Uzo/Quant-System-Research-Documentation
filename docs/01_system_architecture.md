@@ -12,6 +12,10 @@ To eliminate the need for hardcoded execution scripts, the framework utilizes an
 - **Decoupled Execution:** When a researcher creates a new hypothesis engine (e.g., `kang_momentum_v1.py`), it is automatically detected and added to the terminal UI menu without requiring any modifications to the core infrastructure.
 - **Standardized Interface:** Every strategy engine conforms to a strict entry-point signature (`run_research(symbol, start_dt, end_dt)`), allowing the CLI wizard to pass environmental parameters universally.
 
+CLI Wizard Screenshot:
+![Interactive CLI Launcher](../screenshots/interactive_cli.png)
+A terminal screenshot showing the dynamic menu asking for Instrument, Research Mode, and Date Range.
+
 ## 2. Configuration & Environment Management
 
 Environmental variables and instrument metadata are strictly isolated from the Python execution logic to prevent hardcoding errors.
@@ -41,16 +45,6 @@ Quantitative research is only valid if it is reproducible. The framework's artif
 
 ---
 
-IMAGE PLACEHOLDERS FOR THIS FILE:
-
-1. Architecture Flow Diagram:
-   - Location: Top of file or under Section 1
-   - Markdown: ![System Architecture Flow](../diagrams/architecture_flow.png)
-   - Save As: `diagrams/architecture_flow.png`
-   - Suggested Content: A block diagram showing the flow: YAML Config + CLI Wizard -> Engine (Plugin) -> Data Loader -> Stateless Scanner -> Artifact Exporter.
-
-2. CLI Wizard Screenshot:
-   - Location: Under Section 1
-   - Markdown: ![Interactive CLI Launcher](../screenshots/interactive_cli.png)
-   - Save As: `screenshots/interactive_cli.png`
-   - Suggested Content: A terminal screenshot showing the dynamic menu asking for Instrument, Research Mode, and Date Range.
+Architecture Flow Diagram:
+![System Architecture Flow](../diagrams/architecture_flow.png)
+A block diagram showing the flow: YAML Config + CLI Wizard -> Engine (Plugin) -> Data Loader -> Stateless Scanner -> Artifact Exporter.
