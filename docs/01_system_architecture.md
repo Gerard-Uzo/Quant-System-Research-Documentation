@@ -41,8 +41,8 @@ Quantitative research is only valid if it is reproducible. The framework's artif
 
 ---
 
-<!--
 IMAGE PLACEHOLDERS FOR THIS FILE:
+
 1. Architecture Flow Diagram:
    - Location: Top of file or under Section 1
    - Markdown: ![System Architecture Flow](../diagrams/architecture_flow.png)
@@ -54,4 +54,3 @@ IMAGE PLACEHOLDERS FOR THIS FILE:
    - Markdown: ![Interactive CLI Launcher](../screenshots/interactive_cli.png)
    - Save As: `screenshots/interactive_cli.png`
    - Suggested Content: A terminal screenshot showing the dynamic menu asking for Instrument, Research Mode, and Date Range.
--->

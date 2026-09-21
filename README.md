@@ -61,11 +61,10 @@ The engine produces datasets specifically engineered for quantitative analysis. 
 
 Please see [**NOTICE.md**](NOTICE.md) for information regarding Intellectual Property and the intentional exclusion of proprietary trading logic from this repository.
 
-<!--
 IMAGE PLACEHOLDERS FOR THIS FILE:
+
 1. Banner Image:
    - Location: Top of README
    - Markdown: ![Architecture Banner](diagrams/framework_banner.png)
    - Save As: `diagrams/framework_banner.png`
    - Suggested Content: A sleek, dark-themed banner containing the text "KANG Quantitative Research Framework" with abstract geometric charting lines or a terminal UI faint in the background.
--->

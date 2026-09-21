@@ -56,11 +56,10 @@ Failing to align backtest data with live broker server time causes Session Killz
 
 ---
 
-<!--
 IMAGE PLACEHOLDERS FOR THIS FILE:
+
 1. Causal Timeline Diagram:
    - Location: Bottom of Section 2 or Section 4
    - Markdown: ![Causal Execution Timeline](../diagrams/timeline_causality.png)
    - Save As: `diagrams/timeline_causality.png`
    - Suggested Content: A flowchart diagram showing T_open (08:00) -> Candle Formation -> T_close (12:00) -> Order Placed -> Forward Simulation Time -> Trade Exit. This visual proves the mathematical impossibility of past-filling.
--->

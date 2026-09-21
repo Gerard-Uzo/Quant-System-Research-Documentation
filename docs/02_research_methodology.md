@@ -42,11 +42,10 @@ In live environments, algorithmic execution via cron jobs or server polling intr
 
 ---
 
-<!--
 IMAGE PLACEHOLDERS FOR THIS FILE:
+
 1. Dataset Output Screenshot:
    - Location: Under Section 2 or 3
    - Markdown: ![Sanitized Dataset Sample](../screenshots/sanitized_dataset_sample.png)
    - Save As: `screenshots/sanitized_dataset_sample.png`
    - Suggested Content: A cropped screenshot of the CSV output showing columns like Entry_Name, SL_Model, MAE_Pips, MFE_Pips, and Target_RR. (Ensure proprietary columns like Orig_Zone_Type are hidden or cropped out).
--->
