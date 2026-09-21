@@ -18,6 +18,11 @@ The KANG framework utilizes a **Multi-Grid Simulation** approach. For every dete
 
 This outputs a denormalized, "Long Format" dataset where one market setup generates dozens of distinct, simulated execution rows. This format is heavily optimized for pivot-table analysis and ML feature engineering, allowing researchers to build probability curves of penetration depth versus win rate.
 
+Dataset Output Screenshot:
+
+- ![Sanitized Dataset Sample](../screenshots/sanitized_dataset_sample.png)
+- A cropped screenshot of the CSV output showing columns like Entry_Name, SL_Model, MAE_Pips, MFE_Pips, and Target_RR.
+
 ## 3. Execution Profiling: MAE & MFE
 
 Binary tracking of "Wins" and "Losses" is insufficient for professional quantitative research. A trade that immediately goes into deep drawdown before eventually hitting the target exhibits a vastly different risk profile than a trade that never faces adverse excursion.
@@ -41,11 +46,3 @@ A critical element of the methodology is ensuring that historical simulations ac
 In live environments, algorithmic execution via cron jobs or server polling introduces inherent latency. To account for this, the live execution modules associated with the KANG framework utilize a **Price Improvement Override** mechanism. If a pending limit order price is surpassed favorably during the fractional delay of a server execution cycle, the system automatically overrides the limit order with a direct market order. This logic captures optimal institutional fills and ensures that the historical backtest's assumption of limit-order execution remains robust in live forward-testing.
 
 ---
-
-IMAGE PLACEHOLDERS FOR THIS FILE:
-
-1. Dataset Output Screenshot:
-   - Location: Under Section 2 or 3
-   - Markdown: ![Sanitized Dataset Sample](../screenshots/sanitized_dataset_sample.png)
-   - Save As: `screenshots/sanitized_dataset_sample.png`
-   - Suggested Content: A cropped screenshot of the CSV output showing columns like Entry_Name, SL_Model, MAE_Pips, MFE_Pips, and Target_RR. (Ensure proprietary columns like Orig_Zone_Type are hidden or cropped out).

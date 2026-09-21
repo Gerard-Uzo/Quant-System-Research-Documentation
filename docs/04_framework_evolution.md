@@ -35,10 +35,7 @@ The framework no longer asks, _"Is this strategy profitable?"_ Instead, it evalu
 
 ---
 
-IMAGE PLACEHOLDERS FOR THIS FILE:
+Evolution Diagram:
 
-1. Evolution Diagram:
-   - Location: Bottom of the file
-   - Markdown: ![Framework Evolution Diagram](../diagrams/evolution_diagram.png)
-   - Save As: `diagrams/evolution_diagram.png`
-   - Suggested Content: A visual showing the transition from the tangled "Alchemist CE Monolith" to the clean, decoupled "KANG Modular Pipeline" (Config -> Engine -> Artifacts).
+- ![Framework Evolution Diagram](../diagrams/evolution_diagram.png)
+- A visual showing the transition from the tangled "Alchemist CE Monolith" to the clean, decoupled "KANG Modular Pipeline" (Config -> Engine -> Artifacts).

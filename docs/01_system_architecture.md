@@ -13,8 +13,9 @@ To eliminate the need for hardcoded execution scripts, the framework utilizes an
 - **Standardized Interface:** Every strategy engine conforms to a strict entry-point signature (`run_research(symbol, start_dt, end_dt)`), allowing the CLI wizard to pass environmental parameters universally.
 
 CLI Wizard Screenshot:
-![Interactive CLI Launcher](../screenshots/interactive_cli.png)
-A terminal screenshot showing the dynamic menu asking for Instrument, Research Mode, and Date Range.
+
+- ![Interactive CLI Launcher](../screenshots/interactive_cli.png)
+- A terminal screenshot showing the dynamic menu asking for Instrument, Research Mode, and Date Range.
 
 ## 2. Configuration & Environment Management
 
@@ -46,5 +47,6 @@ Quantitative research is only valid if it is reproducible. The framework's artif
 ---
 
 Architecture Flow Diagram:
-![System Architecture Flow](../diagrams/architecture_flow.png)
-A block diagram showing the flow: YAML Config + CLI Wizard -> Engine (Plugin) -> Data Loader -> Stateless Scanner -> Artifact Exporter.
+
+- ![System Architecture Flow](../diagrams/architecture_flow.png)
+- A block diagram showing the flow: YAML Config + CLI Wizard -> Engine (Plugin) -> Data Loader -> Stateless Scanner -> Artifact Exporter.

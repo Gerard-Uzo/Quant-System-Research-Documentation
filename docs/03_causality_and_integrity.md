@@ -48,6 +48,11 @@ To capture rich execution metadata (Maximum Favorable/Adverse Excursion) without
 - **Tick-by-Tick Approximation:** The engine iterates through the future array chronologically. It tracks whether the High or Low of the current $M15$ bar breaches the Entry coordinate _before_ it breaches the Target coordinate.
 - **Missed TP Tracking:** If the target is hit before the entry limit order is triggered, the simulation immediately halts and flags the outcome as `MISSED_HIT_TP`, preventing the engine from filling a stale order days after the trade idea has already played out.
 
+Causal Timeline Diagram:
+
+- [Causal Execution Timeline](../diagrams/timeline_causality.png)
+- A flowchart diagram showing T_open (08:00) -> Candle Formation -> T_close (12:00) -> Order Placed -> Forward Simulation Time -> Trade Exit. This visual proves the mathematical impossibility of past-filling.
+
 ## 5. Timezone & Broker Server Parity
 
 Historical Parquet datasets often normalize timestamps to UTC. However, live execution via MetaTrader 5 relies on the broker's specific server time, which is heavily impacted by regional Daylight Saving Time (DST) shifts (e.g., New York EST/EDT transitions).
@@ -55,11 +60,3 @@ Historical Parquet datasets often normalize timestamps to UTC. However, live exe
 Failing to align backtest data with live broker server time causes Session Killzones and Daily candle boundaries to drift by 1-2 hours, destroying spatial geometry. The framework utilizes a dedicated `time_utils` module that applies dynamic `pytz` localization to ensure historical Parquet arrays are correctly offset to match the live execution environment seamlessly.
 
 ---
-
-IMAGE PLACEHOLDERS FOR THIS FILE:
-
-1. Causal Timeline Diagram:
-   - Location: Bottom of Section 2 or Section 4
-   - Markdown: ![Causal Execution Timeline](../diagrams/timeline_causality.png)
-   - Save As: `diagrams/timeline_causality.png`
-   - Suggested Content: A flowchart diagram showing T_open (08:00) -> Candle Formation -> T_close (12:00) -> Order Placed -> Forward Simulation Time -> Trade Exit. This visual proves the mathematical impossibility of past-filling.
