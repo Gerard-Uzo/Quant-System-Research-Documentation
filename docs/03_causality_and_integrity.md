@@ -50,7 +50,8 @@ To capture rich execution metadata (Maximum Favorable/Adverse Excursion) without
 
 Causal Timeline Diagram:
 
-- [Causal Execution Timeline](../diagrams/timeline_causality.png)
+![Causal Execution Timeline](../diagrams/timeline_causality.png)
+
 - A flowchart diagram showing T_open (08:00) -> Candle Formation -> T_close (12:00) -> Order Placed -> Forward Simulation Time -> Trade Exit. This visual proves the mathematical impossibility of past-filling.
 
 ## 5. Timezone & Broker Server Parity

@@ -20,7 +20,8 @@ This outputs a denormalized, "Long Format" dataset where one market setup genera
 
 Dataset Output Screenshot:
 
-- ![Sanitized Dataset Sample](../screenshots/sanitized_dataset_sample.png)
+![Sanitized Dataset Sample](../screenshots/sanitized_dataset_sample.png)
+
 - A cropped screenshot of the CSV output showing columns like Entry_Name, SL_Model, MAE_Pips, MFE_Pips, and Target_RR.
 
 ## 3. Execution Profiling: MAE & MFE

@@ -14,7 +14,8 @@ To eliminate the need for hardcoded execution scripts, the framework utilizes an
 
 CLI Wizard Screenshot:
 
-- ![Interactive CLI Launcher](../screenshots/interactive_cli.png)
+![Interactive CLI Launcher](../screenshots/interactive_cli.png)
+
 - A terminal screenshot showing the dynamic menu asking for Instrument, Research Mode, and Date Range.
 
 ## 2. Configuration & Environment Management
@@ -48,5 +49,6 @@ Quantitative research is only valid if it is reproducible. The framework's artif
 
 Architecture Flow Diagram:
 
-- ![System Architecture Flow](../diagrams/architecture_flow.png)
+![System Architecture Flow](../diagrams/architecture_flow.png)
+
 - A block diagram showing the flow: YAML Config + CLI Wizard -> Engine (Plugin) -> Data Loader -> Stateless Scanner -> Artifact Exporter.
